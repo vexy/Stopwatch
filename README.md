@@ -1,6 +1,6 @@
 # Stopwatch
 
-Zero dependency Swift stopwatch.
+Zero dependency Swift stopwatch. Figurable in seconds !
 
 ## Usage
 Overall `Stopwatch` usage is fairly straightforward.  
@@ -8,13 +8,14 @@ You mark beginning of the measurement interval and probe elapsed time at desired
 
 Simple use case coud be:
 ```Swift
-    function doSomething() async {
-        Stopwatch.begin()
-        //
-        somethingThatTakesTime()
-        //
-        print("Elapsed: \(Stopwatch.elapsed)")
-    }
+function doSomething() async {
+    // Mark beginning of measuring interval
+    Stopwatch.begin()
+    
+    somethingThatTakesTime()
+    
+    // Show elapsed time string
+    print("Elapsed: \(Stopwatch.elapsed)")
 }
 ```
 
