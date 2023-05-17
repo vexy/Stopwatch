@@ -8,7 +8,7 @@ You mark beginning of the measurement interval and probe elapsed time at desired
 
 Simple use case coud be:
 ```Swift
-function doSomething() async {
+function doSomething() {
     // Mark beginning of measuring interval
     Stopwatch.begin()
     
@@ -18,6 +18,11 @@ function doSomething() async {
     print("Elapsed: \(Stopwatch.elapsed)")
 }
 ```
+## Installation
+Stopwatch can be easily installed using `SPM`.  
+
+Package name: Stopwatch  
+Package URL: https://github.com/vexy/Stopwatch  
 
 And that's it. Enjoy!
 
